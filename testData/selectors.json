@@ -1,0 +1,4 @@
+{
+  "userMenu": ".ant-dropdown-trigger.ant-dropdown-link",
+  "menuItem": ".ant-dropdown-menu-item-only-child"
+}

@@ -8,7 +8,8 @@ const loginPage = {
   txtReset: 'Forgot your password? Reset it.',
   btnGoogle: 'Sign in with Google',
   btnFacebook: 'Sign in with Facebook',
-  emailNotValid: '\'email\' is not a valid email'
+  emailNotValid: '\'email\' is not a valid email',
+  headerHomePage: 'Adaptive learning platform'
 };
 
 export { loginPage };
