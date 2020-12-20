@@ -21,6 +21,10 @@ class UserMenu extends BasePage {
     return $('[data-qa="settings"]');
   }
 
+  get userMenu () {
+    return $$('.ant-dropdown-trigger.ant-dropdown-link');
+  };
+
   get logoutBtn () {
     return $('[data-qa="logout"]');
   }
