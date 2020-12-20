@@ -1,4 +1,5 @@
-// import BasePage from './BasePage';
+import BasePage from './BasePage';
+import LoginPage from './login.page';
 
 class QuizPage extends LoginPage {
   get startQuizButton () {
