@@ -1,9 +1,10 @@
 const roles = {
+
   new: {
-    email: 'new@qa6.us',
-    password: 'newnew',
-    firstName: 'NewFirst',
-    lastName: 'NewLast',
+    email: '20705_new@gmail.com',
+    password: 'Admin20705',
+    firstName: 'New',
+    lastName: 'New',
     phone: '17775551121',
     about: 'QA Engineer',
     goals: 'no goals',
@@ -14,9 +15,9 @@ const roles = {
   admin: {
     email: '20705_admin@gmail.com',
     password: 'Admin20705',
-    firstName: 'AdminFirst',
-    lastName: 'AdminLast',
-    phone: '17775551122',
+    firstName: 'Admin',
+    lastName: 'Admin',
+    phone: '19174369646',
     about: 'QA Engineer',
     goals: 'no goals',
     englishLevel: 'Advanced',
@@ -25,10 +26,10 @@ const roles = {
   },
 
   learner: {
-    email: 'learner@qa6.us',
-    password: 'learner',
-    firstName: 'LearnerFirst',
-    lastName: 'LearnerLast',
+    email: '20705_learner@gmail.com',
+    password: 'Admin20705',
+    firstName: 'Learner',
+    lastName: 'Learner',
     phone: '111234567890',
     about: 'QA Engineer',
     goals: 'no goals',
@@ -37,10 +38,22 @@ const roles = {
   },
 
   student: {
-    email: 'student@qa6.us',
-    password: 'student',
-    firstName: 'StudentFirst',
-    lastName: 'StudentLast',
+    email: '20705_student@gmail.com',
+    password: 'Admin20705',
+    firstName: 'Student',
+    lastName: 'Student',
+    phone: '17775551124',
+    about: 'QA Engineer',
+    goals: 'no goals',
+    englishLevel: 'Advanced',
+    countryName: 'USA'
+  },
+
+  teacher: {
+    email: '20705_teacher@gmail.com',
+    password: 'Admin20705',
+    firstName: 'Teacher',
+    lastName: 'Teacher',
     phone: '17775551124',
     about: 'QA Engineer',
     goals: 'no goals',
