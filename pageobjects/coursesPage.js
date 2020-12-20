@@ -20,7 +20,6 @@ class CoursesPage extends BasePage {
   chooseCourse () {
     this.courseName.click();
   }
-
 }
 
 module.exports = new CoursesPage();
