@@ -12,6 +12,7 @@ describe('User menu. Dropdown menu items work properly for Admin', function () {
     browser.pause(2000);
     expect(LoginPage.header.getAttribute('innerText')).to.be.equal(userMenu.nameAdmin);
   });
+
   it('Menu: Settings', function () {
     LoginPage.open();
     LoginPage.login(user.admin.email, user.admin.password);
@@ -21,6 +22,7 @@ describe('User menu. Dropdown menu items work properly for Admin', function () {
     browser.pause(2000);
     expect(browser.getUrl()).to.contain('profile');
   });
+
   it('Menu: Logout', function () {
     LoginPage.open();
     LoginPage.login(user.admin.email, user.admin.password);
@@ -39,6 +41,7 @@ describe('User menu. Dropdown menu items work properly for Teacher', function ()
     browser.pause(2000);
     expect(LoginPage.header.getAttribute('innerText')).to.be.equal(userMenu.nameTeacher);
   });
+
   it('Menu: Settings', function () {
     LoginPage.open();
     LoginPage.login(user.teacher.email, user.teacher.password);
@@ -48,6 +51,7 @@ describe('User menu. Dropdown menu items work properly for Teacher', function ()
     browser.pause(2000);
     expect(browser.getUrl()).to.contain('profile');
   });
+
   it('Menu: Logout', function () {
     LoginPage.open();
     LoginPage.login(user.teacher.email, user.teacher.password);
@@ -66,6 +70,7 @@ describe('User menu. Dropdown menu items work properly for Learner', function ()
     browser.pause(2000);
     expect(LoginPage.header.getAttribute('innerText')).to.be.equal(userMenu.nameLearner);
   });
+
   it('Menu: Settings', function () {
     LoginPage.open();
     LoginPage.login(user.learner.email, user.learner.password);
@@ -75,6 +80,7 @@ describe('User menu. Dropdown menu items work properly for Learner', function ()
     browser.pause(2000);
     expect(browser.getUrl()).to.contain('profile');
   });
+
   it('Menu: Logout', function () {
     LoginPage.open();
     LoginPage.login(user.learner.email, user.learner.password);
@@ -93,6 +99,7 @@ describe('User menu. Dropdown menu items work properly for Student', function ()
     browser.pause(2000);
     expect(LoginPage.header.getAttribute('innerText')).to.be.equal(userMenu.nameStudent);
   });
+
   it('Menu: Settings', function () {
     LoginPage.open();
     LoginPage.login(user.student.email, user.student.password);
@@ -102,6 +109,7 @@ describe('User menu. Dropdown menu items work properly for Student', function ()
     browser.pause(2000);
     expect(browser.getUrl()).to.contain('profile');
   });
+
   it('Menu: Logout', function () {
     LoginPage.open();
     LoginPage.login(user.student.email, user.student.password);
@@ -120,6 +128,7 @@ describe('User menu. Dropdown menu items work properly for New', function () {
     browser.pause(2000);
     expect(LoginPage.header.getAttribute('innerText')).to.be.equal(userMenu.nameNew);
   });
+
   it('Menu: Settings', function () {
     LoginPage.open();
     LoginPage.login(user.new.email, user.new.password);
@@ -129,6 +138,7 @@ describe('User menu. Dropdown menu items work properly for New', function () {
     browser.pause(2000);
     expect(browser.getUrl()).to.contain('profile');
   });
+
   it('Menu: Logout', function () {
     LoginPage.open();
     LoginPage.login(user.new.email, user.new.password);
