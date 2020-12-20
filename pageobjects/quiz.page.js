@@ -22,10 +22,6 @@ class QuizPage extends LoginPage {
     return $$('.mb-4')[1];
   }
 
-  // get answerRadioButton () {
-  //   return $('#answer');
-  // }
-
   get answerCheckBox () {
     return $$('.ant-radio-inner');
   }
@@ -42,10 +38,9 @@ class QuizPage extends LoginPage {
     this.title.getText();
   }
 
-  // selectAnswer () {
-  //   this.answerCheckBox.click();
-  //   this.answerRadioButton.click();
-  // }
+   selectAnswer () {
+     this.answerCheckBox.click();
+   }
 
   submit () {
     this.submitButton.click();
