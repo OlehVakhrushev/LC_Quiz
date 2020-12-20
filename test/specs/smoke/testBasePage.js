@@ -7,7 +7,7 @@ describe('LOGIN', function () {
   it('General check', function () {
     LoginPage.open();
     LoginPage.login(user.admin.email, user.admin.password);
-    browser.pause(2000);
+    browser.pause(3000);
     expect(LoginPage.headerLogin.getAttribute('innerText')).to.be.equal(loginPage.header);
   });
 });
