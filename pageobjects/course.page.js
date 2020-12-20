@@ -1,4 +1,3 @@
-
 import BasePage from './BasePage';
 
 class CoursePage extends BasePage {
