@@ -1,4 +1,5 @@
 const roles = {
+
   new: {
     email: 'new@qa6.us',
     password: 'newnew',
@@ -12,10 +13,10 @@ const roles = {
   },
 
   admin: {
-    email: 'admin@qa6.us',
-    password: 'admin',
-    firstName: 'AdminFirst',
-    lastName: 'AdminLast',
+    email: '20705_admin@gmail.com',
+    password: 'Admin20705',
+    firstName: 'Admin',
+    lastName: 'Admin',
     phone: '17775551122',
     about: 'QA Engineer',
     goals: 'no goals',
