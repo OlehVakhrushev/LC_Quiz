@@ -147,10 +147,8 @@ describe('User menu. Dropdown menu items work properly for New', function () {
     UserMenu.logout();
     browser.pause(2000);
     expect(LoginPage.header.getAttribute('innerText')).to.be.equal(loginPage.header);
-import user from '../../../testData/users';
-import { expect } from 'chai';
-import { userMenu } from '../../../expected/userMenu.page.expected';
-import UserMenu from '../../../pageobjects/user.menu.js';
+  });
+});
 
 describe('User menu. First and Last name should present in the top of the right corner', function () {
   it('Admin First and Last name', function () {
