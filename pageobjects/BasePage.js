@@ -1,4 +1,3 @@
-
 export default class BasePage {
   get homePageLink () {
     return $('.site-name');

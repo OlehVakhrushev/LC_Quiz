@@ -12,8 +12,8 @@ const roles = {
   },
 
   admin: {
-    email: 'admin@qa6.us',
-    password: 'admin',
+    email: '20705_admin@gmail.com',
+    password: 'Admin20705',
     firstName: 'AdminFirst',
     lastName: 'AdminLast',
     phone: '17775551122',
