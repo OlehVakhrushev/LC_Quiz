@@ -17,4 +17,5 @@ class TopMenu extends BasePage {
     this.groupsSection.click();
   }
 }
+
 module.exports = new TopMenu();
