@@ -38,9 +38,9 @@ class QuizPage extends LoginPage {
     this.title.getText();
   }
 
-   selectAnswer () {
-     this.answerCheckBox.click();
-   }
+  selectAnswer () {
+    this.answerCheckBox.click();
+  }
 
   submit () {
     this.submitButton.click();
