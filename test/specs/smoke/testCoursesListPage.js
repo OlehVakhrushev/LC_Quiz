@@ -1,6 +1,6 @@
 import LoginPage from '../../../pageobjects/login.page';
 import user from '../../../testData/users';
-import CoursesPage from '../../../pageobjects/coursesPage';
+import CoursesListPage from '../../../pageobjects/coursesListPage';
 import { coursesPage } from '../../../expected/courses.page.expected';
 import { expect } from 'chai';
 
@@ -9,9 +9,9 @@ describe('Open JS Practice Course', function () {
     LoginPage.open();
     LoginPage.login(user.admin.email, user.admin.password);
     browser.pause(3000);
-    CoursesPage.openCourse();
+    CoursesListPage.openCourse();
     browser.pause(3000);
-    CoursesPage.chooseCourse();
-    expect(CoursesPage.jsPracticeName.getAttribute('innerText')).to.be.equal(coursesPage.jsPractice);
+    CoursesListPage.chooseCourse();
+    expect(CoursesListPage.jsPracticeName.getAttribute('innerText')).to.be.equal(coursesPage.jsPractice);
   });
 });
