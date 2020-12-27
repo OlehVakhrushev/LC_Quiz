@@ -13,12 +13,20 @@ class CoursesPage extends BasePage {
     return $('h1');
   };
 
+  get lesson () {
+    return $('a[href$="5d2eb6620f1c8500385e7064"]');
+  };
+
   openCourse () {
     this.lnkCourse.click();
   }
 
   chooseCourse () {
     this.courseName.click();
+  }
+
+  openLesson () {
+    this.lesson.click();
   }
 }
 
