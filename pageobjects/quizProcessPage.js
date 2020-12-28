@@ -23,7 +23,23 @@ class QuizProcessPage extends BasePage {
 
   get lessonName () {
     return $('h1');
-  };
+  }
+
+  get radioButtons () {
+    return $$('.ant-radio-input');
+  }
+
+  get selectedRadioButton () {
+    return $$('span.ant-radio.ant-radio-checked');
+  }
+
+  get textOfAnswers () {
+    return $$('label > span:nth-child(2)');
+  }
+
+  get totalAnswerOptions () {
+    return $$('label');
+  }
 
   breadCrumbsCourseRedirect () {
     this.breadCrumbsCourse.click();
@@ -46,6 +62,10 @@ class QuizProcessPage extends BasePage {
     CoursePage.openQuiz();
     browser.pause(3000);
     QuizPage.startQuiz();
+  }
+
+  selectRadioButton (n) {
+    this.radioButtons[n].click();
   }
 }
 module.exports = new QuizProcessPage();
