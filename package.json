@@ -13,6 +13,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "axios": "^0.21.1",
     "chai": "^4.2.0",
     "globals": "^13.4.0",
     "mocha": "^8.2.1"
