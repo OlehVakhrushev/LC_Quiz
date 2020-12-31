@@ -3,6 +3,7 @@ import LoginPage from './login.page';
 import CoursesListPage from './coursesListPage';
 import CoursePage from './course.page';
 import QuizPage from './quiz.page';
+import TopMenu from './top.menu';
 
 class QuizProcessPage extends BasePage {
   get breadCrumbsCourse () {
@@ -33,12 +34,28 @@ class QuizProcessPage extends BasePage {
     return $$('span.ant-radio.ant-radio-checked');
   }
 
+  get answerCheckBox () {
+    return $$('.ant-checkbox-input');
+  }
+
+  get submitButton () {
+    return $('.ant-btn.ant-btn-primary');
+  }
+
   get textOfAnswers () {
     return $$('label > span:nth-child(2)');
   }
 
   get totalAnswerOptions () {
     return $$('label');
+  }
+
+  get totalProgressBarDash () {
+    return $$('.ant-progress-steps-item');
+  }
+
+  get totalActiveProgressBar () {
+    return $$('.ant-progress-steps-item-active');
   }
 
   breadCrumbsCourseRedirect () {
@@ -53,7 +70,7 @@ class QuizProcessPage extends BasePage {
     LoginPage.open();
     LoginPage.login(email, password);
     browser.pause(3000);
-    CoursesListPage.openCourse();
+    TopMenu.openCourses();
     browser.pause(3000);
     CoursesListPage.chooseCourse();
     browser.pause(3000);
@@ -66,6 +83,43 @@ class QuizProcessPage extends BasePage {
 
   selectRadioButton (n) {
     this.radioButtons[n].click();
+  }
+
+  selectCheckBox (n) {
+    this.answerCheckBox[n].click();
+  }
+
+  passQuiz () {
+    this.radioButtons[2].click();
+    browser.pause(3000);
+    this.submitButton.click();
+    browser.pause(3000);
+    this.radioButtons[1].click();
+    browser.pause(3000);
+    this.submitButton.click();
+    browser.pause(3000);
+    this.answerCheckBox[0].click();
+    this.answerCheckBox[1].click();
+    this.answerCheckBox[2].click();
+    browser.pause(3000);
+    this.submitButton.click();
+    browser.pause(3000);
+    this.answerCheckBox[0].click();
+    this.answerCheckBox[1].click();
+    this.answerCheckBox[2].click();
+    browser.pause(3000);
+    this.submitButton.click();
+    browser.pause(3000);
+    this.radioButtons[2].click();
+    browser.pause(3000);
+    this.submitButton.click();
+    browser.pause(3000);
+    this.answerCheckBox[0].click();
+    this.answerCheckBox[1].click();
+    this.answerCheckBox[3].click();
+    this.answerCheckBox[5].click();
+    this.answerCheckBox[7].click();
+    browser.pause(3000);
   }
 }
 module.exports = new QuizProcessPage();

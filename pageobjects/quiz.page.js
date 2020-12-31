@@ -1,5 +1,4 @@
 import BasePage from './BasePage';
-import LoginPage from './login.page';
 
 class QuizPage extends BasePage {
   get startQuizButton () {
@@ -23,11 +22,11 @@ class QuizPage extends BasePage {
   }
 
   get answerCheckBox () {
-    return $$('.ant-radio-inner');
+    return $$('.ant-checkbox-input');
   }
 
   get submitButton () {
-    return $('ant-btn.ant-btn-primary');
+    return $('.ant-btn.ant-btn-primary');
   }
 
   startQuiz () {
