@@ -1,20 +1,18 @@
-import BasePage from './BasePage';
-
 class CoursePage extends BasePage {
-  get lesson () {
-    return $('a[href$="5d2a083562cf140038fe221d"]');
+  get lessonString () {
+    return $('a[href$="5d2eb6620f1c8500385e7064"]');
   };
 
-  get lessonSyntax () {
-    return $('a[href$="5cde476f21fc0e0038aaabdd"]');
+  get quizLink () {
+    return $$('.mr-2')[2];
   };
 
   openLesson () {
-    this.lesson.click();
+    this.lessonString.click();
   }
 
-  openLessonSyntax () {
-    this.lessonSyntax.click();
+  openQuiz () {
+    this.quizLink.click();
   }
 }
 
