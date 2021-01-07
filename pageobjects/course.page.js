@@ -1,7 +1,5 @@
-import BasePage from './BasePage';
-
 class CoursePage extends BasePage {
-  get lesson () {
+  get lessonString () {
     return $('a[href$="5d2eb6620f1c8500385e7064"]');
   };
 
@@ -10,7 +8,7 @@ class CoursePage extends BasePage {
   };
 
   openLesson () {
-    this.lesson.click();
+    this.lessonString.click();
   }
 
   openQuiz () {
