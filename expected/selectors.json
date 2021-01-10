@@ -1,0 +1,12 @@
+{
+  "alertNameTryAgain": ".alert-heading",
+  "alertT": "//p",
+  "alertRecommend": ".mb-0",
+  "textSecondary": ".text-secondary",
+  "rightAnswer": ".mr-4",
+  "resetResult": ".ant-btn.ant-btn-default",
+  "section2": ".edit.ml-2",
+  "quizLink": ".mr-2"
+}
+
+

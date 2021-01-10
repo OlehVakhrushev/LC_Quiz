@@ -1,0 +1,8 @@
+{
+  "heyText": "Hey, Admin Admin! Try again.",
+  "totalSolvedFailed": "Total questions 9.\nSolved 0.\nFailed 9. This test does not allow mistakes.",
+  "recommend": "We recommend you go over this lesson and go back to current test.",
+  "legendText": "Legend:► Your answer Correct answer Wrong answer",
+  "greenAnswer": "/static/checked.86d40f54.svg",
+  "redAnswer": "/static/x-circle.9231e98f.svg"
+}
