@@ -1,0 +1,14 @@
+{
+  "rightAnswer": {
+    "correctAnswer": 3,
+    "wrongAnswer": 4
+  },
+
+  "section2": {
+    "lesson3": 7
+  },
+
+  "quizLink": {
+    "jsPractice": 2
+  }
+}

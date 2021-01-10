@@ -1,13 +1,12 @@
 import BasePage from './BasePage';
-import LoginPage from './login.page';
 
-class QuizPage extends LoginPage {
+class QuizPage extends BasePage {
   get startQuizButton () {
     return $('.ant-btn');
   }
 
   get title () {
-    return $('.mr-2')[5];
+    return $$('.mr-2')[5];
   }
 
   get progress () {
@@ -23,11 +22,23 @@ class QuizPage extends LoginPage {
   }
 
   get answerCheckBox () {
-    return $$('.ant-radio-inner');
+    return $$('.ant-checkbox-input')[0];
+  }
+
+  get answerCheckBox1 () {
+    return $$('.ant-checkbox-input')[1];
   }
 
   get submitButton () {
-    return $('ant-btn.ant-btn-primary');
+    return $('.ant-btn.ant-btn-primary');
+  }
+
+  get selectRadio () {
+    return $$('.ant-radio-input')[1];
+  }
+
+  selectRadioAnswer () {
+    this.selectRadio.click();
   }
 
   startQuiz () {
@@ -42,10 +53,13 @@ class QuizPage extends LoginPage {
     this.answerCheckBox.click();
   }
 
+  selectAnswer1 () {
+    this.answerCheckBox1.click();
+  }
+
   submit () {
     this.submitButton.click();
   }
 };
 
-module.exports = new LoginPage();
 module.exports = new QuizPage();
