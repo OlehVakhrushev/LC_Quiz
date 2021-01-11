@@ -3,18 +3,26 @@ import BasePage from './BasePage';
 class CoursePage extends BasePage {
   get lessonString () {
     return $('a[href$="5d2eb6620f1c8500385e7064"]');
+  }
+
+  get lesson () {
+    return $('a[href$="5cde476f21fc0e0038aaabdd"]');
+  }
+
+  get lessonSyntax () {
+    return $('a[href$="5cde476f21fc0e0038aaabdd"]');
   };
 
-  get quizLink () {
-    return $$('.mr-2')[2];
-  };
-
-  openLesson () {
+  openLessonString () {
     this.lessonString.click();
   }
 
-  openQuiz () {
-    this.quizLink.click();
+  openLesson () {
+    this.lesson.click();
+  }
+
+  openLessonSyntax () {
+    this.lessonSyntax.click();
   }
 }
 

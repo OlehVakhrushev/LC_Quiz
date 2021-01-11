@@ -1,10 +1,6 @@
 import BasePage from './BasePage';
 
 class CoursesListPage extends BasePage {
-  get lnkCourse () {
-    return $('div[data-qa=\'topmenu-Courses\']');
-  };
-
   get courseName () {
     return $('a[href$="5d1cbf67086fc30038bf1859"]');
   };
