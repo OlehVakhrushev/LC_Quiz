@@ -4,7 +4,7 @@ import QuizProcessPage from '../../../pageobjects/quizProcessPage';
 import { expect } from 'chai';
 
 describe('Submit button functionality', function () {
-  it('TC-001. Button stays inactive if the answer was not selected (checkbox disselected)', function f () {
+  it('TC-001. Button stays inactive if the answer was not selected (checkbox deselected)', function f () {
     QuizProcessPage.startQuizSteps(user.admin.email, user.admin.password);
     QuizProcessPage.passQuiz();
     QuizProcessPage.answerCheckBox[0].click();

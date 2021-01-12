@@ -4,6 +4,7 @@ import CoursesListPage from './coursesListPage';
 import CoursePage from './course.page';
 import QuizPage from './quiz.page';
 import TopMenu from './top.menu';
+import LessonPage from './lesson.page';
 
 class QuizProcessPage extends BasePage {
   get breadCrumbsCourse () {
@@ -74,9 +75,9 @@ class QuizProcessPage extends BasePage {
     browser.pause(3000);
     CoursesListPage.chooseCourse();
     browser.pause(3000);
-    CoursePage.openLesson();
+    CoursePage.openLessonString();
     browser.pause(3000);
-    CoursePage.openQuiz();
+    LessonPage.openQuizString();
     browser.pause(3000);
     QuizPage.startQuiz();
   }
