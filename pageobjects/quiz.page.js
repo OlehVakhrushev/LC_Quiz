@@ -6,7 +6,7 @@ class QuizPage extends BasePage {
   }
 
   get title () {
-    return $('.mr-2')[5];
+    return $$('.mr-2')[5];
   }
 
   get progress () {
@@ -27,6 +27,14 @@ class QuizPage extends BasePage {
 
   get submitButton () {
     return $('.ant-btn.ant-btn-primary');
+  }
+
+  get selectRadio () {
+    return $$('.ant-radio-input')[1];
+  }
+
+  selectRadioAnswer () {
+    this.selectRadio.click();
   }
 
   startQuiz () {
