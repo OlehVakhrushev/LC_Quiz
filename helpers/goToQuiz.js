@@ -1,11 +1,9 @@
 import LoginPage from '../pageobjects/login.page';
-import user from '../testData/users';
 import TopMenu from '../pageobjects/top.menu';
 import CoursesListPage from '../pageobjects/coursesListPage';
-import sel from '../expected/selectors.json';
-import data from '../expected/data.json';
 import CoursePage from '../pageobjects/course.page';
 import LessonPage from '../pageobjects/lesson.page';
+import user from '../testData/users';
 
 function goToQuiz (i) {
   LoginPage.open();
