@@ -6,7 +6,7 @@ class QuizPage extends BasePage {
   }
 
   get title () {
-    return $$('.mr-2')[5];
+    return $('.mr-2')[5];
   }
 
   get progress () {
