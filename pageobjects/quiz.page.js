@@ -45,8 +45,8 @@ class QuizPage extends BasePage {
     this.title.getText();
   }
 
-  selectAnswer () {
-    this.answerCheckBox.click();
+  selectAnswer (i) {
+    this.answerCheckBox[i].click();
   }
 
   submit () {
