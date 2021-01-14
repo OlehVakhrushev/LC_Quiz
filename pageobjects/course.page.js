@@ -1,3 +1,5 @@
+import BasePage from './BasePage';
+
 class CoursePage extends BasePage {
   get lessonString () {
     return $('a[href$="5d2eb6620f1c8500385e7064"]');
