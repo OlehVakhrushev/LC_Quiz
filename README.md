@@ -2,7 +2,7 @@
 ### **To run tests:**
 * Clone repository
 ```
-https://github.com/vasylynash/LC_Quiz.git
+https://github.com/OlehVakhrushev/LC_Quiz
 ```
 * Run `npm install`
 * Run `npm test`
