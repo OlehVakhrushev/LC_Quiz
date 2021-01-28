@@ -12,7 +12,8 @@ describe('Open JS Practice Course', function () {
     browser.pause(3000);
     TopMenu.openCourses();
     browser.pause(3000);
-    CoursesListPage.chooseCourse();
+    CoursesListPage.chooseCourse(2);
+    browser.pause(3000);
     expect(CoursesListPage.jsPracticeName.getAttribute('innerText')).to.be.equal(coursesPage.jsPractice);
   });
 });

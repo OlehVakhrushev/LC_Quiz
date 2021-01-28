@@ -36,7 +36,7 @@ describe('Bread crumbs elements redirect to the correct pages', function () {
   });
 
   it('TC-003. The third element in the bread crumbs menu redirects to the Lesson page', function f () {
-    CoursePage.openLessonString();
+    CoursePage.openLesson(71);
     browser.pause(3000);
     LessonPage.openQuizString();
     browser.pause(3000);

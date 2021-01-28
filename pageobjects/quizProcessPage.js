@@ -73,9 +73,9 @@ class QuizProcessPage extends BasePage {
     browser.pause(3000);
     TopMenu.openCourses();
     browser.pause(3000);
-    CoursesListPage.chooseCourse();
+    CoursesListPage.chooseCourse(2);
     browser.pause(3000);
-    CoursePage.openLessonString();
+    CoursePage.openLesson(71);
     browser.pause(3000);
     LessonPage.openQuizString();
     browser.pause(3000);
