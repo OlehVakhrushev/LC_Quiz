@@ -1,5 +1,7 @@
 const coursesPage = {
-  jsPractice: 'JavaScript Practice'
+  jsPractice: 'JavaScript Practice',
+  permError: 'Permission denied'
+
 };
 
 export { coursesPage };

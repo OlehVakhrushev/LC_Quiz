@@ -15,6 +15,10 @@ class CoursePage extends BasePage {
     return $$('.edit.ml-2');
   }
 
+  get errorMessageCourses () {
+    $('.ant-notification-notice-message');
+  }
+
   // openLessonString () {
   //   this.lessonString.click();
   // }
